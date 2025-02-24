@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo metabólico</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<body>
+    <h1>CÁLCULO DE GASTO ENERGÉTICO DIÁRIO</h1>
+    <h2>Quantas calorias você queima por dia</h2>
+    <div class="dados">
+    <form action="dds_usr" method="post">
+        <table>
+
+            <tr>
+                <td class="g">Gênero</td>
+                <td>
+                <label>
+                    <input type="radio" name="genero" id="masculino" value="homem" checked>
+                    Homem
+                </label>
+
+                <label>
+                    <input type="radio" name="genero" id="feminino" value="mulher" checked>
+                    Mulher
+                </label>
+            </td>
+            </tr>
+        <tr>
+            <td class="edad">
+        <label for="idade">Idade</label>
+    </td>
+    <td>
+        <input type="text" id="idade" name="idade" class="idd" style="width: 70px;" maxlength="3" value>
+    </td>
+    </tr>
+        <tr>
+            <td class ="peseo">
+        <label for="peso">Peso</label>
+    </td>
+    <td>
+        <input type="text" id="peso" name="peso" class="pes" placeholder="kg" style="width: 70px;" maxlength="4" value>
+    </td>
+    </tr>
+    <tr>
+        <td class="altur">
+        <label for="altura">Altura</label>
+    </td>
+    <td>
+        <input type="text" id="altura" name="altura" class="alt" placeholder="cm" style="width: 70px;" maxlenght="4" value>
+    </td>
+    </tr>
+       
+    <tr>
+    <td class="atividade">Atividade</td>
+    <td>
+        <select name="atividade" class="atvd" style="width: 200px;">
+            <option value="sedentario">Sedentário (não pratica atividades físicas)</option>
+            <option value="leve">Exercícios leves (1-2 dias na semana)</option>
+            <option value="moderado">Exercícios moderados (3-5 dias na semana)</option>
+            <option value="intenso">Exercícios pesados (6-7 dias na semana)</option>
+            <option value="atleta">Atleta (exercícios 2x por dia)</option>
+        </select>
+    </td>
+</tr>
+
+<tr style="margin-top: 20px;">
+    <td>
+        <button type="button" class="btn" id="botao">Calcular</button>
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <div id="resultado" style="margin-top: 20px; font-weight: bold;"></div>
+    </td>
+</tr>
+    </table>
+    
+    <script src="a.js"></script>   
+    </form>
+</div>
+
+<div class="txt">
+<div class="texto1">
+<h3>O que é TDEE?</h3>
+<p style="width: 500px;">Seu Gasto Energético Diário Total (TDEE) é uma estimativa de quantas calorias você queima por dia quando o exercício é levado em consideração.
+     Ele é calculado primeiro determinando sua Taxa Metabólica Basal (BMR) e,
+      em seguida, multiplicando esse valor por um multiplicador de atividade.
+
+    Como sua BMR representa quantas calorias seu corpo queima em repouso,
+     é necessário ajustar os valores para cima para levar em conta as calorias que você queima durante o dia.
+     Isso é verdade mesmo para aqueles com um estilo de vida sedentário.
+      Nossa calculadora de TDEE usa as melhores fórmulas e exibe seu resultado de uma forma fácil de entender e significativa.</p>
+    </div>
+
+
+<div class="texto2">
+<h3 style="margin-top: 50px;">Por que é importante saber o seu TDEE?</h3>
+<p style="width: 500px;">Saber o seu Gasto Energético Diário Total é fundamental para quem busca uma vida saudável,
+ seja para manter o peso, emagrecer ou ganhar massa muscular.
+ O TDEE representa a quantidade total de calorias que você queima em um dia, 
+ levando em consideração não apenas o seu metabolismo basal (as calorias que seu corpo gasta para manter funções vitais, como respirar e bombear sangue),
+  mas também as calorias gastas em atividades físicas e no dia a dia.</p>
+</div>
+
+</div>
+
+<div class="links">
+    <h3><a href="https://www.google.com">Sobre</a></h3>
+    <h3><a href="https://www.google.com">FAQ</a></h3>
+    <h3><a href="https://www.google.com">Contato</a></h3>
+    </div>
+
+</body>
+</html>
