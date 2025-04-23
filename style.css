@@ -46,6 +46,11 @@ table {
  
 }
 
+.btn-r {
+    padding: 10px 10px; 
+    cursor: pointer; 
+}
+
 input[type="text"],
 select {
     width: 100%; 

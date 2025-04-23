@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
         let tmbResultado;
+        const botaoReset = document.getElementById('botaoReset');
         if (genero === "homem") {
        tmbResultado = tmbHomens();
         } else {
@@ -57,10 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (typeof tmbResultado === "number" && !isNaN(tmbResultado)) {
             const tmbReal = tmbResultado * fatoresAtividade[atividade];
             document.getElementById('resultado').innerHTML = `Sua Taxa Metabólica é: ${tmbReal.toFixed(2)} calorias por dia.`;
-        } else {
+        }  else {
             document.getElementById('resultado').innerHTML = tmbResultado;
         }
     });
+    const botaoReset = document.getElementById('botaoReset');
+    botaoReset.addEventListener('click', function() {
+        document.getElementById('dadosForm').reset();
+        document.getElementById('resultado').innerHTML = ` `;
+    })
 });
     
    
